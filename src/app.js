@@ -3,8 +3,8 @@ import people from './people';
 import $ from 'jquery';
 
 
-$('<h1>People</h1>').appendTo('body');
-const ul = $('<ul></ul>').appendTo('body');
+$('<h1>People</h1>').appendTo('.aside');
+const ul = $('<ul></ul>').appendTo('.aside');
 for (const person of people){
     $('<li></li>').text(person).appendTo(ul);
 }
