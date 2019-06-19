@@ -1,7 +1,9 @@
 /* import mixins */
 /* import normalize.css */
+
+/* Run transpile SCSS to CSS with command - npm run scss*/
+@import url(../../node_modules/normalize.css);
+@import url(../test_style.css);
 .first_class {
   color: forestgreen;
-}
-
-/*# sourceMappingURL=style.css.map */
+  background-color: antiquewhite; }

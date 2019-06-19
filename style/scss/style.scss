@@ -1,6 +1,14 @@
 /* import mixins */
 /* import normalize.css */
 
+/* Run transpile SCSS to CSS with command - npm run scss*/
+
 .first_class{
     color: forestgreen;
+    background-color: antiquewhite;
 }
+
+
+@import "../../node_modules/normalize";
+
+@import "../test_style.css";
