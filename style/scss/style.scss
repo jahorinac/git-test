@@ -5,6 +5,10 @@
 
 npm install node-sass
 Run transpile SCSS to CSS with command - npm run scss
+                   -- or --
+install ruby
+sass --default-encoding UTF-8 --watch style/scss:style/css --style expanded
+note: later add import css(package) to scss
 ==== */
 
 /* ==== Normalize ====
