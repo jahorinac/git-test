@@ -92,23 +92,23 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var babel_polyfill__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var babel_polyfill__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(babel_polyfill__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(333);
-/* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_people__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(334);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(333);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(334);
+/* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_people__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-jquery__WEBPACK_IMPORTED_MODULE_2___default()('<h1>People</h1>').appendTo('body');
-var ul = jquery__WEBPACK_IMPORTED_MODULE_2___default()('<ul></ul>').appendTo('body');
+jquery__WEBPACK_IMPORTED_MODULE_1___default()('<h1>People</h1>').appendTo('.aside');
+var ul = jquery__WEBPACK_IMPORTED_MODULE_1___default()('<ul></ul>').appendTo('.aside');
 var _iteratorNormalCompletion = true;
 var _didIteratorError = false;
 var _iteratorError = undefined;
 
 try {
-  for (var _iterator = _people__WEBPACK_IMPORTED_MODULE_1___default.a[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+  for (var _iterator = _people__WEBPACK_IMPORTED_MODULE_2___default.a[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
     var person = _step.value;
-    jquery__WEBPACK_IMPORTED_MODULE_2___default()('<li></li>').text(person).appendTo(ul);
+    jquery__WEBPACK_IMPORTED_MODULE_1___default()('<li></li>').text(person).appendTo(ul);
   } // people = require ('./people.js');
   //
   //     console.log(people);
@@ -441,7 +441,7 @@ var SymbolRegistry = shared('symbol-registry');
 var AllSymbols = shared('symbols');
 var OPSymbols = shared('op-symbols');
 var ObjectProto = Object[PROTOTYPE];
-var USE_NATIVE = typeof $Symbol == 'function';
+var USE_NATIVE = typeof $Symbol == 'function' && !!$GOPS.f;
 var QObject = global.QObject;
 // Don't use setters in Qt Script, https://github.com/zloirock/core-js/issues/173
 var setter = !QObject || !QObject[PROTOTYPE] || !QObject[PROTOTYPE].findChild;
@@ -744,7 +744,7 @@ module.exports = $export;
 /* 10 */
 /***/ (function(module, exports) {
 
-var core = module.exports = { version: '2.6.6' };
+var core = module.exports = { version: '2.6.9' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
@@ -9549,13 +9549,6 @@ module.exports = function (regExp, replace) {
 
 /***/ }),
 /* 333 */
-/***/ (function(module, exports) {
-
-var people = ['Bon', 'Joe', 'Mary', 'John'];
-module.exports = people;
-
-/***/ }),
-/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -20158,6 +20151,13 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 334 */
+/***/ (function(module, exports) {
+
+var people = ['Bon', 'Joe', 'Mary', 'John'];
+module.exports = people;
 
 /***/ })
 /******/ ]);

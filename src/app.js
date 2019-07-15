@@ -1,7 +1,6 @@
 import 'babel-polyfill';
-import people from './people';
 import $ from 'jquery';
-
+import people from './people';
 
 $('<h1>People</h1>').appendTo('.aside');
 const ul = $('<ul></ul>').appendTo('.aside');
