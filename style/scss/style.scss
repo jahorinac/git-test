@@ -21,8 +21,20 @@ https://github.com/ranjandatta/node-normalize-scss
 @import "basic";
 @import "mixins";
 
-.first_class{
-    color: blue;
-    background-color: antiquewhite;
+
+.logo_wrapper{
+    @include flexbox;
+    @include justify-content(center);
+}
+.logo{
+    height: 70px;
+}
+.header_nav{
+    @include flexbox;
+    @include justify-content(center);
+}
+.nav_item{
+    padding: 0 5px 0 0;
+    text-decoration: none;
 }
 

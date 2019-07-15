@@ -414,9 +414,35 @@ parametars 1. width form_group el, 2. height, 3.padding left and right ( optiona
   box-shadow: none;
 }
 
-.first_class {
-  color: blue;
-  background-color: antiquewhite;
+.logo_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.header_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.nav_item {
+  padding: 0 5px 0 0;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
