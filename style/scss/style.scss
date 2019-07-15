@@ -1,24 +1,24 @@
 /* import mixins */
 /* import normalize.css */
 
-/* Transpile SCSS to CSS
+/* ==== Transpile SCSS to CSS ====
 
 npm install node-sass
 Run transpile SCSS to CSS with command - npm run scss
-*/
+==== */
 
-/*  Normalize
+/* ==== Normalize ====
 
 npm install node-normalize-scss --save-dev
 https://github.com/ranjandatta/node-normalize-scss
-*/
+==== */
 
 
 @import "basic";
 @import "mixins";
 
 .first_class{
-    color: green;
+    color: blue;
     background-color: antiquewhite;
 }
 
