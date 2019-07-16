@@ -25,6 +25,7 @@ $color_1: #529A86;
 $color_2: #FCD2A8;
 $color_3: #007D75;
 $color_4: #EC6778;
+$color_5: #000000;
 
 
 
@@ -45,10 +46,12 @@ body{
 .header_nav{
     @include flexbox;
     @include justify-content(center);
+    background-color: $color_1;
 }
 .nav_item{
-    padding: 0 5px 0 5px;
+    padding: 10px 5px 10px 5px;
     text-decoration: none;
-    color: $color_1;
+    color: $color_5;
+    text-transform: uppercase;
 }
 
