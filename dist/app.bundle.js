@@ -96,6 +96,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(334);
 /* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_people__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _moduls_navigation_bar_runner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(335);
+
 
 
 
@@ -109,10 +111,7 @@ try {
   for (var _iterator = _people__WEBPACK_IMPORTED_MODULE_2___default.a[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
     var person = _step.value;
     jquery__WEBPACK_IMPORTED_MODULE_1___default()('<li></li>').text(person).appendTo(ul);
-  } // people = require ('./people.js');
-  //
-  //     console.log(people);
-
+  }
 } catch (err) {
   _didIteratorError = true;
   _iteratorError = err;
@@ -127,6 +126,8 @@ try {
     }
   }
 }
+
+new _moduls_navigation_bar_runner__WEBPACK_IMPORTED_MODULE_3__["default"]();
 
 /***/ }),
 /* 1 */
@@ -20158,6 +20159,45 @@ return jQuery;
 
 var people = ['Bon', 'Joe', 'Mary', 'John'];
 module.exports = people;
+
+/***/ }),
+/* 335 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Runner; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Runner =
+/*#__PURE__*/
+function () {
+  function Runner() {
+    var _this = this;
+
+    _classCallCheck(this, Runner);
+
+    var nav_links = document.querySelectorAll('.nav_item');
+    nav_links.forEach(function (el) {
+      el.addEventListener('click', _this.openDropDown);
+    });
+  }
+
+  _createClass(Runner, [{
+    key: "openDropDown",
+    value: function openDropDown() {
+      console.log('openDropDown');
+    }
+  }]);
+
+  return Runner;
+}();
+
+
 
 /***/ })
 /******/ ]);
