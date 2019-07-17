@@ -414,6 +414,10 @@ parametars 1. width form_group el, 2. height, 3.padding left and right ( optiona
   box-shadow: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 body {
   background-color: #FCD2A8;
 }
@@ -435,6 +439,15 @@ body {
 }
 
 .header_nav {
+  background-color: #529A86;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header_container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -443,14 +456,25 @@ body {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  background-color: #529A86;
 }
 
-.nav_item {
+.nav_item_link {
   padding: 10px 5px 10px 5px;
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+  display: block;
+}
+
+.nav_dropdown_content {
+  position: absolute;
+  -webkit-box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
+}
+
+.nav_dropdown_link {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
