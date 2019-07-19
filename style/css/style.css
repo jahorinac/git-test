@@ -418,6 +418,10 @@ parametars 1. width form_group el, 2. height, 3.padding left and right ( optiona
   display: none !important;
 }
 
+.show {
+  display: block !important;
+}
+
 body {
   background-color: #FCD2A8;
 }
@@ -471,6 +475,7 @@ body {
   -webkit-box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
+  display: none;
 }
 
 .nav_dropdown_link {

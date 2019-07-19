@@ -20181,16 +20181,41 @@ function () {
 
     _classCallCheck(this, Runner);
 
-    var nav_links = document.querySelectorAll('.nav_item');
-    nav_links.forEach(function (el) {
-      el.addEventListener('click', _this.openDropDown);
+    this.opened = null;
+    document.addEventListener('click', function (e) {
+      return _this.handleClick;
     });
   }
 
   _createClass(Runner, [{
-    key: "openDropDown",
-    value: function openDropDown() {
-      console.log('openDropDown');
+    key: "toggleElementClass",
+    value: function toggleElementClass(el) {
+      el.classList.toggle('show');
+    }
+  }, {
+    key: "handleDroprdown",
+    value: function handleDroprdown(el) {
+      var dropdown = el.nextElementSibling;
+      this.toggleElementClass(dropdown);
+
+      if (!this.opened) {
+        this.opened = dropdown;
+      } else if (this.opened == dropdown) {
+        this.opened = null;
+      } else {
+        this.toggleElementClass(this.opened);
+        this.opened = dropdown;
+      }
+    }
+  }, {
+    key: "handleClick",
+    value: function handleClick(e) {
+      if (e.target.className.includes('js_nav_item_link')) {
+        this.handleDroprdown(e.target);
+      } else if (this.opened) {
+        this.toggleElementClass(this.opened);
+        this.opened = null;
+      }
     }
   }]);
 
