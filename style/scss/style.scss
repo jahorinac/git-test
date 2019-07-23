@@ -20,6 +20,7 @@ https://github.com/ranjandatta/node-normalize-scss
 
 @import "basic";
 @import "mixins";
+@import "fonts";
 
 $color_1: #529A86;
 $color_2: #FCD2A8;
@@ -36,12 +37,19 @@ $color_5: #000000;
 
 html {
     height: 100%;
+    font-family: "Open Sans";
 }
 body {
     position: relative;
-    padding: 0 0 50px 0;
+    //padding: 0 0 50px 0;
     min-height: 100%;
     background-color: $color_2;
+
+    &:after{
+        content: '';
+        display: block;
+        height: 50px;
+    }
 }
 
 .logo_wrapper{
@@ -69,14 +77,25 @@ body {
     color: $color_5;
     text-transform: uppercase;
     display: block;
+
+    &:hover {
+        background: darken($color_1, 10%);
+    }
 }
 .nav_dropdown_content{
     position: absolute;
     @include box-shadow(4px 4px 11px -2px rgba(0,0,0,0.75));
     display: none;
+    width: 180px;
 }
 .nav_dropdown_link{
     display: block;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background: darken($color_2, 10%);
+    }
 }
 .footer{
     text-transform: uppercase;

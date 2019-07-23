@@ -414,6 +414,37 @@ parametars 1. width form_group el, 2. height, 3.padding left and right ( optiona
   box-shadow: none;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  src: url("../../fonts/OpenSans-Light-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: url("../../fonts/OpenSans-LightItalic-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: url("../../fonts/OpenSans-Regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  src: url("../../fonts/OpenSans-Semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  src: url("../../fonts/OpenSans-Bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 900;
+  src: url("../../fonts/OpenSans-ExtraBold.woff") format("woff");
+}
 .hide {
   display: none !important;
 }
@@ -424,13 +455,18 @@ parametars 1. width form_group el, 2. height, 3.padding left and right ( optiona
 
 html {
   height: 100%;
+  font-family: "Open Sans";
 }
 
 body {
   position: relative;
-  padding: 0 0 50px 0;
   min-height: 100%;
   background-color: #FCD2A8;
+}
+body:after {
+  content: '';
+  display: block;
+  height: 50px;
 }
 
 .logo_wrapper {
@@ -476,6 +512,9 @@ body {
   text-transform: uppercase;
   display: block;
 }
+.nav_item_link:hover {
+  background: #407969;
+}
 
 .nav_dropdown_content {
   position: absolute;
@@ -483,10 +522,16 @@ body {
   -moz-box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
   box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
   display: none;
+  width: 180px;
 }
 
 .nav_dropdown_link {
   display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+.nav_dropdown_link:hover {
+  background: #fab977;
 }
 
 .footer {
