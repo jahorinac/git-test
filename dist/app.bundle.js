@@ -20183,7 +20183,7 @@ function () {
 
     this.opened = null;
     document.addEventListener('click', function (e) {
-      return _this.handleClick;
+      return _this.handleClick(e);
     });
   }
 
