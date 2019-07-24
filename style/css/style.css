@@ -490,7 +490,7 @@ body:after {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -523,6 +523,7 @@ body:after {
   box-shadow: 4px 4px 11px -2px rgba(0, 0, 0, 0.75);
   display: none;
   width: 180px;
+  background-color: #FCD2A8;
 }
 
 .nav_dropdown_link {
@@ -532,6 +533,60 @@ body:after {
 }
 .nav_dropdown_link:hover {
   background: #fab977;
+}
+
+.form_content {
+  padding: 30px 10px;
+}
+
+.form_title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  margin: 24px 0;
+}
+
+.form_fields {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.form_label {
+  text-transform: uppercase;
+}
+
+.form_input {
+  border: 0;
+  outline: none;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin: 0 0 10px 0;
+}
+
+.button_wrapper {
+  padding: 20px 0;
+}
+
+.button_submit {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: #529A86;
+  padding: 10px;
 }
 
 .footer {
