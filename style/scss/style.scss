@@ -37,7 +37,7 @@ $color_5: #000000;
 
 html {
     height: 100%;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
 }
 body {
     position: relative;
@@ -106,6 +106,7 @@ body {
     text-align: center;
     font-size: 24px;
     margin: 24px 0;
+    font-weight: 700;
 }
 .form_fields{
     @include flexbox;

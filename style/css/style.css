@@ -455,7 +455,7 @@ parametars 1. width form_group el, 2. height, 3.padding left and right ( optiona
 
 html {
   height: 100%;
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
 }
 
 body {
@@ -544,6 +544,7 @@ body:after {
   text-align: center;
   font-size: 24px;
   margin: 24px 0;
+  font-weight: 700;
 }
 
 .form_fields {
