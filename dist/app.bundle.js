@@ -97,6 +97,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(334);
 /* harmony import */ var _people__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_people__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _moduls_navigation_bar_runner__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(335);
+/*======================= URADITI NA PROJEKTU =============================
+
+https://medium.com/@bryanmanuele/how-i-implemented-my-own-spa-routing-system-in-vanilla-js-49942e3c4573
+https://medium.com/@etiennerouzeaud/a-simple-crud-application-with-javascript-ebc82f688c59
+==========================================================================*/
 
 
 
