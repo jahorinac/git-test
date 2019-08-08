@@ -530,6 +530,8 @@ body:after {
   display: block;
   padding: 10px;
   cursor: pointer;
+  text-decoration: none;
+  color: #000000;
 }
 .nav_dropdown_link:hover {
   background: #fab977;

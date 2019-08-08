@@ -93,6 +93,8 @@ body {
     display: block;
     padding: 10px;
     cursor: pointer;
+    text-decoration: none;
+    color: $color_5;
 
     &:hover {
         background: darken($color_2, 10%);
